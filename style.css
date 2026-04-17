@@ -235,6 +235,64 @@ img {
   gap: var(--spacing-md);
 }
 
+/* ================= DROPDOWN ================= */
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown__icon {
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+  transition: transform var(--transition-fast);
+  display: inline-block;
+}
+
+.has-dropdown:hover .dropdown__icon {
+  transform: rotate(180deg);
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--clr-surface);
+  border: 2px solid var(--clr-text-main);
+  min-width: 240px;
+  padding: 0.75rem 0;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-smooth);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.has-dropdown:hover .dropdown__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdown__link {
+  display: block;
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--clr-text-main);
+  transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.dropdown__link:hover {
+  background-color: var(--clr-bg);
+  color: var(--clr-primary);
+  border-left-color: var(--clr-primary);
+  padding-left: 1.75rem;
+}
+
 .nav__link {
   font-family: var(--font-display);
   font-weight: 600;
@@ -780,6 +838,44 @@ img {
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-sm);
+    width: 100%;
+  }
+
+  .has-dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown__menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0;
+    min-width: 100%;
+    pointer-events: all;
+  }
+
+  .has-dropdown:hover .dropdown__menu {
+    max-height: 1000px;
+    padding: 0.5rem 0;
+  }
+
+  .dropdown__link {
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    border-left: none;
+  }
+
+  .dropdown__link:hover {
+    padding-left: 0;
+    background-color: var(--clr-accent-dim);
   }
   
   .profil__container {
