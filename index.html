@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - SMKN 1 Surabaya</title>
+    
+    <!-- Fonts: Bricolage Grotesque & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <a href="#" class="header__logo">
+                <img src="https://placehold.co/150x50/0f3dcc/ffffff?text=Logo+SMKN+1&font=oswald" alt="Logo SMKN 1">
+            </a>
+            
+            <button class="header__toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#profil" class="nav__link">Profil</a></li>
+                    <li class="nav__item"><a href="#jurusan" class="nav__link">Jurusan</a></li>
+                    <li class="nav__item"><a href="#berita" class="nav__link">Berita</a></li>
+                    <li class="nav__item"><a href="#buku" class="nav__link">Buku & Modul</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section id="hero" class="hero section-animate">
+            <div class="hero__bg-wrapper">
+                <img src="https://placehold.co/1200x600/101828/ffffff?text=Campus+Life" alt="Hero Banner" class="hero__bg">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content container">
+                <span class="hero__badge">Merdeka Belajar</span>
+                <h1 class="hero__title">Selamat Datang di<br>SMKN 1 Surabaya</h1>
+                <p class="hero__subtitle">Mencetak generasi unggul, terampil, dan berkarakter untuk masa depan industri global.</p>
+                <div class="hero__cta-group">
+                    <a href="#jurusan" class="btn btn--primary">Eksplorasi Program <i class="fas fa-arrow-right"></i></a>
+                    <a href="#profil" class="btn btn--outline">Tonton Video <i class="fas fa-play-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROFIL & VIDEO ================= -->
+        <section id="profil" class="profil section-animate">
+            <div class="container profil__container">
+                <div class="profil__text">
+                    <h2 class="section-title">Membangun Masa Depan <span class="text-accent">Hari Ini</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla, ex vel pellentesque vestibulum, ex enim elementum turpis, nec cursus leo odio nec sapien. Phasellus tincidunt id sapien a consequat. Etiam eget dolor a est euismod vehicula non in nisl.</p>
+                    <p>Praesent dapibus cursus metus, a rhoncus est semper at. Sed scelerisque aliquet varius. Integer dictum risus vitae eros bibendum, ut interdum massa lobortis. Cras nec semper velit, a laoreet ligula.</p>
+                    <div class="profil__stats">
+                        <div class="stat-item">
+                            <h3 class="stat-item__number">1.5K+</h3>
+                            <span class="stat-item__label">Siswa Aktif</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-item__number">50+</h3>
+                            <span class="stat-item__label">Mitra Industri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profil__video-wrapper">
+                    <img src="https://placehold.co/600x400/eeeeee/888888?text=Video+Thumbnail" alt="Video Thumbnail" class="profil__video-img">
+                    <div class="profil__video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="profil__video-decoration"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= JURUSAN ================= -->
+        <section id="jurusan" class="jurusan section section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Program <span class="text-accent">Keahlian</span></h2>
+                    <p class="section-desc">Pilihan jurusan vokasional terbaik untuk membentuk kompetensi profesional dan kewirausahaan.</p>
+                </div>
+                
+                <div class="jurusan__grid">
+                    <!-- Card 1 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-code"></i></div>
+                        <h3 class="card__title">Rekayasa Perangkat Lunak</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-network-wired"></i></div>
+                        <h3 class="card__title">Teknik Komputer & Jaringan</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-photo-video"></i></div>
+                        <h3 class="card__title">Multimedia</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-calculator"></i></div>
+                        <h3 class="card__title">Akuntansi</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-briefcase"></i></div>
+                        <h3 class="card__title">Perkantoran</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-store"></i></div>
+                        <h3 class="card__title">Pemasaran</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-hotel"></i></div>
+                        <h3 class="card__title">Perhotelan</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-utensils"></i></div>
+                        <h3 class="card__title">Tata Boga</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-tshirt"></i></div>
+                        <h3 class="card__title">Tata Busana</h3>
+                        <p class="card__desc">Lorem ipsum dolor sit amet consec tetur. Velit euismod vehicula nec.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BERITA ================= -->
+        <section id="berita" class="berita section section-animate">
+            <div class="container">
+                <div class="section-header section-header--flex">
+                    <div>
+                        <h2 class="section-title">Berita <span class="text-accent">Terbaru</span></h2>
+                        <p class="section-desc">Informasi dan liputan kegiatan terkini dari lingkungan sekolah.</p>
+                    </div>
+                    <a href="#" class="btn btn--link">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="berita__flex">
+                    <!-- Berita 1 -->
+                    <article class="card card--berita">
+                        <div class="card__img-wrapper">
+                            <img src="https://placehold.co/400x250/0f3dcc/ffffff?text=Berita+1" alt="Berita Thumbnail">
+                            <span class="card__date">18 April 2026</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                            <p class="card__excerpt">Morbi eget vulputate sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Berita 2 -->
+                    <article class="card card--berita">
+                        <div class="card__img-wrapper">
+                            <img src="https://placehold.co/400x250/e11d48/ffffff?text=Berita+2" alt="Berita Thumbnail">
+                            <span class="card__date">16 April 2026</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Aliquam erat volutpat nulla fringilla ex vel.</h3>
+                            <p class="card__excerpt">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Berita 3 -->
+                    <article class="card card--berita">
+                        <div class="card__img-wrapper">
+                            <img src="https://placehold.co/400x250/111827/ffffff?text=Berita+3" alt="Berita Thumbnail">
+                            <span class="card__date">12 April 2026</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Suspendisse potenti in efficitur tortor quis.</h3>
+                            <p class="card__excerpt">Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Col 1 -->
+                <div class="footer__col">
+                    <h3 class="footer__brand">SMKN 1 <span class="text-accent">Surabaya</span></h3>
+                    <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="footer__socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Kontak</h4>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. SMEA No.4, Wonokromo, Surabaya</li>
+                        <li><i class="fas fa-phone"></i> (031) 8292038</li>
+                        <li><i class="fas fa-envelope"></i> info@smkn1-sby.sch.id</li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Tautan</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Bursa Kerja Khusus (BKK)</a></li>
+                        <li><a href="#">PPDB Online</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                        <li><a href="#">Sistem Informasi Akademik</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer__col footer__maps">
+                    <h4 class="footer__title">Lokasi</h4>
+                    <img src="https://placehold.co/300x200/efefef/333?text=Google+Maps" alt="Peta Lokasi" class="footer__map-img">
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 SMKN 1 Surabaya. All rights reserved.</p>
+                <div class="footer__policy">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
