@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru & Tenaga Kependidikan - SMKN 1 Surabaya</title>
+    <meta name="description" content="Daftar guru dan tenaga kependidikan SMKN 1 Surabaya yang profesional dan berdedikasi.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <a href="index.html" class="header__logo">
+                <img src="https://placehold.co/150x50/0f3dcc/ffffff?text=Logo+SMKN+1&font=oswald" alt="Logo SMKN 1">
+            </a>
+            <button class="header__toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item has-dropdown">
+                        <a href="#" class="nav__link active">Profil <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="visi-misi.html" class="dropdown__link">Visi & Misi</a></li>
+                            <li><a href="struktur-organisasi.html" class="dropdown__link">Struktur organisasi</a></li>
+                            <li><a href="guru-staf.html" class="dropdown__link">Guru & Tenaga kependidikan</a></li>
+                            <li><a href="sarana-prasarana.html" class="dropdown__link">Sarana dan Prasarana</a></li>
+                            <li><a href="teaching-factory.html" class="dropdown__link">Teaching Factory</a></li>
+                            <li><a href="galeri.html" class="dropdown__link">Gallery Foto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item has-dropdown">
+                        <a href="index.html#jurusan" class="nav__link">Jurusan <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link">Akuntansi</a></li>
+                            <li><a href="#" class="dropdown__link">Bisnis Daring dan Pemasaran</a></li>
+                            <li><a href="#" class="dropdown__link">Manajemen Perkantoran</a></li>
+                            <li><a href="#" class="dropdown__link">Manajemen Logistik</a></li>
+                            <li><a href="#" class="dropdown__link">Rekayasa Perangkat Lunak</a></li>
+                            <li><a href="#" class="dropdown__link">Teknik Komputer dan Jaringan</a></li>
+                            <li><a href="#" class="dropdown__link">Desain Komunikasi Visual</a></li>
+                            <li><a href="#" class="dropdown__link">Produksi Siaran Program Pertelevisian</a></li>
+                            <li><a href="#" class="dropdown__link">Perhotelan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item has-dropdown">
+                        <a href="#" class="nav__link">Informasi <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link">Mr.ISO</a></li>
+                            <li><a href="#" class="dropdown__link">Pengumuman</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="index.html#berita" class="nav__link">Berita</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Modul</a></li>
+                    <li class="nav__item has-dropdown">
+                        <a href="#" class="nav__link">Program <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link">Lembaga Sertifikasi Profesi</a></li>
+                            <li><a href="#" class="dropdown__link">Bursa Kerja Khusus (BKK)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= PAGE HERO ================= -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__content">
+                    <div class="page-hero__breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Profil</span>
+                        <span>/</span>
+                        <span>Guru & Tenaga Kependidikan</span>
+                    </div>
+                    <h1 class="page-hero__title">Guru & Tenaga Kependidikan</h1>
+                    <p class="page-hero__desc">Tenaga pendidik profesional dan berdedikasi tinggi yang siap membimbing generasi penerus bangsa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GURU & STAF ================= -->
+        <section class="staff-section section-animate">
+            <div class="container">
+                <!-- Filter Tabs -->
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">Semua</button>
+                    <button class="filter-tab" data-filter="guru-normatif">Normatif & Adaptif</button>
+                    <button class="filter-tab" data-filter="guru-produktif">Produktif</button>
+                    <button class="filter-tab" data-filter="tendik">Tenaga Kependidikan</button>
+                </div>
+
+                <!-- Staff Grid -->
+                <div class="staff-grid" id="staff-grid">
+                    <!-- Guru Normatif & Adaptif -->
+                    <div class="staff-card" data-category="guru-normatif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/0f3dcc/ffffff?text=Guru+1&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Dra. Endang Susilowati</h3>
+                            <p class="staff-card__subject">Matematika</p>
+                            <span class="staff-card__badge">Normatif</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-normatif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/374151/ffffff?text=Guru+2&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Agus Hermawan, S.Pd.</h3>
+                            <p class="staff-card__subject">Bahasa Indonesia</p>
+                            <span class="staff-card__badge">Normatif</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-normatif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/6B7280/ffffff?text=Guru+3&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Lina Marlina, S.Pd.</h3>
+                            <p class="staff-card__subject">Bahasa Inggris</p>
+                            <span class="staff-card__badge">Adaptif</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-normatif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/9CA3AF/ffffff?text=Guru+4&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Drs. Mohamad Irfan</h3>
+                            <p class="staff-card__subject">Pendidikan Agama Islam</p>
+                            <span class="staff-card__badge">Normatif</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-normatif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/4B5563/ffffff?text=Guru+5&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Tri Handayani, S.Pd.</h3>
+                            <p class="staff-card__subject">PKn / Pancasila</p>
+                            <span class="staff-card__badge">Normatif</span>
+                        </div>
+                    </div>
+
+                    <!-- Guru Produktif -->
+                    <div class="staff-card" data-category="guru-produktif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/e11d48/ffffff?text=Guru+6&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Andi Prasetyo, S.Kom.</h3>
+                            <p class="staff-card__subject">Pemrograman Web & Mobile</p>
+                            <span class="staff-card__badge">RPL</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-produktif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/DC2626/ffffff?text=Guru+7&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Budi Santoso, S.T.</h3>
+                            <p class="staff-card__subject">Administrasi Jaringan</p>
+                            <span class="staff-card__badge">TKJ</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-produktif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/B91C1C/ffffff?text=Guru+8&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Dewi Lestari, S.Sn.</h3>
+                            <p class="staff-card__subject">Desain Grafis & Ilustrasi</p>
+                            <span class="staff-card__badge">DKV</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-produktif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/991B1B/ffffff?text=Guru+9&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Sri Wahyuni, S.Pd.</h3>
+                            <p class="staff-card__subject">Akuntansi Keuangan</p>
+                            <span class="staff-card__badge">Akuntansi</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="guru-produktif">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/7F1D1D/ffffff?text=Guru+10&font=oswald" alt="Guru" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Rina Kusuma, S.E.</h3>
+                            <p class="staff-card__subject">Pemasaran Digital</p>
+                            <span class="staff-card__badge">BDP</span>
+                        </div>
+                    </div>
+
+                    <!-- Tenaga Kependidikan -->
+                    <div class="staff-card" data-category="tendik">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/059669/ffffff?text=TU+1&font=oswald" alt="Staff" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Eko Purwanto</h3>
+                            <p class="staff-card__subject">Kepala Tata Usaha</p>
+                            <span class="staff-card__badge">TU</span>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-category="tendik">
+                        <div class="staff-card__img-wrapper">
+                            <img src="https://placehold.co/400x400/047857/ffffff?text=TU+2&font=oswald" alt="Staff" class="staff-card__img">
+                        </div>
+                        <div class="staff-card__body">
+                            <h3 class="staff-card__name">Maya Indrawati</h3>
+                            <p class="staff-card__subject">Pustakawan</p>
+                            <span class="staff-card__badge">Perpustakaan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__brand">SMKN 1 <span class="text-accent">Surabaya</span></h3>
+                    <p class="footer__desc">Mencetak generasi unggul, terampil, dan berkarakter untuk masa depan industri global.</p>
+                    <div class="footer__socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Kontak</h4>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. SMEA No.4, Wonokromo, Surabaya</li>
+                        <li><i class="fas fa-phone"></i> (031) 8292038</li>
+                        <li><i class="fas fa-envelope"></i> info@smkn1-sby.sch.id</li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Tautan</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Bursa Kerja Khusus (BKK)</a></li>
+                        <li><a href="#">PPDB Online</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                        <li><a href="#">Sistem Informasi Akademik</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__maps">
+                    <h4 class="footer__title">Lokasi</h4>
+                    <img src="https://placehold.co/300x200/efefef/333?text=Google+Maps" alt="Peta Lokasi" class="footer__map-img">
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 SMKN 1 Surabaya. All rights reserved.</p>
+                <div class="footer__policy">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Staff filter functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const staffCards = document.querySelectorAll('.staff-card');
+
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    const filter = tab.getAttribute('data-filter');
+                    
+                    staffCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = '';
+                            card.style.animation = 'fadeInUp 0.4s ease forwards';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
