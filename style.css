@@ -521,23 +521,16 @@ img {
 }
 
 .profil__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-xl);
-  align-items: center;
-}
-
-.profil__text p {
-  margin-bottom: var(--spacing-sm);
-  color: var(--clr-text-muted);
-}
-
-.profil__stats {
   display: flex;
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-md);
-  padding-top: var(--spacing-md);
-  border-top: 2px solid var(--clr-border);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profil__title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: var(--spacing-lg);
+  max-width: 800px;
 }
 
 .stat-item__number {
@@ -561,11 +554,13 @@ img {
   padding: 0.5rem;
   box-shadow: var(--shadow-md);
   border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .profil__video-img {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 16/9;
   object-fit: cover;
   filter: grayscale(20%);
   transition: all var(--transition-fast);
