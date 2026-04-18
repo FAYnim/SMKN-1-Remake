@@ -139,4 +139,88 @@ document.addEventListener("DOMContentLoaded", () => {
             sliderContainer.addEventListener('mouseleave', () => autoPlay());
         }
     }
+
+    /* =========================================
+       6. Theme Switcher
+    ========================================= */
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+
+    /**
+     * Apply a theme to the html element and persist to localStorage.
+     * @param {'light'|'dark'} theme
+     */
+    function applyTheme(theme) {
+        htmlEl.setAttribute('data-theme', theme);
+        localStorage.setItem('smkn1-theme', theme);
+        updateThemeIcon(theme);
+    }
+
+    /**
+     * Update the theme toggle button icon based on the active theme.
+     * @param {'light'|'dark'} theme
+     */
+    function updateThemeIcon(theme) {
+        if (!themeToggleBtn) return;
+        const icon = themeToggleBtn.querySelector('i');
+        if (!icon) return;
+
+        if (theme === 'dark') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            themeToggleBtn.setAttribute('aria-label', 'Aktifkan mode terang');
+            themeToggleBtn.setAttribute('title', 'Mode Terang');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            themeToggleBtn.setAttribute('aria-label', 'Aktifkan mode gelap');
+            themeToggleBtn.setAttribute('title', 'Mode Gelap');
+        }
+    }
+
+    /**
+     * Toggle between light and dark theme.
+     */
+    function toggleTheme() {
+        const current = htmlEl.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+    }
+
+    /**
+     * Initialize theme on page load:
+     * 1. Check localStorage first (user preference)
+     * 2. Fall back to system preference (prefers-color-scheme)
+     * 3. Default to 'light' if neither is available
+     */
+    function initTheme() {
+        const savedTheme = localStorage.getItem('smkn1-theme');
+
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else {
+            // Detect system preference
+            const prefersDark = window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(prefersDark ? 'dark' : 'light');
+        }
+    }
+
+    // Initialize theme immediately
+    initTheme();
+
+    // Attach event listener to toggle button
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', toggleTheme);
+    }
+
+    // Listen for system theme changes (in case user changes OS setting)
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            // Only update if user has no saved preference
+            if (!localStorage.getItem('smkn1-theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
 });
