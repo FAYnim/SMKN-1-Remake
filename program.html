@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengumuman - SMKN 1 Surabaya</title>
-    <meta name="description" content="Daftar pengumuman terbaru dan informasi penting dari SMKN 1 Surabaya.">
+    <title>Program Unggulan - SMKN 1 Surabaya</title>
+    <meta name="description" content="Informasi mengenai Lembaga Sertifikasi Profesi (LSP) dan Bursa Kerja Khusus (BKK) di SMKN 1 Surabaya.">
     
+    <!-- Fonts: Bricolage Grotesque & Instrument Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -57,7 +62,7 @@
                     </li>
 
                     <li class="nav__item has-dropdown">
-                        <a href="#" class="nav__link active">Informasi <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <a href="#" class="nav__link">Informasi <i class="fas fa-chevron-down dropdown__icon"></i></a>
                         <ul class="dropdown__menu">
                             <li><a href="mr-iso.html" class="dropdown__link">Mr.ISO</a></li>
                             <li><a href="pengumuman.html" class="dropdown__link">Pengumuman</a></li>
@@ -68,7 +73,7 @@
                     <li class="nav__item"><a href="modul.html" class="nav__link">Modul</a></li>
                     
                     <li class="nav__item has-dropdown">
-                        <a href="#" class="nav__link">Program <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <a href="#" class="nav__link active">Program <i class="fas fa-chevron-down dropdown__icon"></i></a>
                         <ul class="dropdown__menu">
                             <li><a href="program.html#lsp" class="dropdown__link">Lembaga Sertifikasi Profesi</a></li>
                             <li><a href="program.html#bkk" class="dropdown__link">Bursa Kerja Khusus (BKK)</a></li>
@@ -87,79 +92,82 @@
                     <div class="page-hero__breadcrumb">
                         <a href="index.html">Home</a>
                         <span>/</span>
-                        <span>Informasi</span>
-                        <span>/</span>
-                        <span>Pengumuman</span>
+                        <span>Program</span>
                     </div>
-                    <h1 class="page-hero__title">Pengumuman</h1>
-                    <p class="page-hero__desc">Tetap terinformasi dengan berita, jadwal, dan pengumuman penting terbaru dari sekolah.</p>
+                    <h1 class="page-hero__title">Program Unggulan</h1>
+                    <p class="page-hero__desc">Komitmen kami dalam menjamin kompetensi lulusan dan memfasilitasi penempatan kerja di industri.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ================= PENGUMUMAN GRID ================= -->
-        <section class="pengumuman-section section-animate">
+        <!-- ================= LSP SECTION ================= -->
+        <section id="lsp" class="section section-animate">
             <div class="container">
-                <div class="berita__flex">
-                    <!-- Pengumuman 1 -->
-                    <article class="card card--berita">
-                        <div class="card__img-wrapper">
-                            <img src="https://placehold.co/400x250/0f3dcc/ffffff?text=SNMPTN+2026" alt="Pengumuman Thumbnail">
-                            <span class="card__date">18 April 2026</span>
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title">Daftar Peserta Didik Eligible SNMPTN Tahun 2026</h3>
-                            <p class="card__excerpt">Berikut adalah daftar siswa-siswi kelas XII yang dinyatakan eligible untuk mengikuti seleksi SNMPTN 2026 berdasarkan nilai raport dan prestasi akademik.</p>
-                            <a href="#" class="card__link">Lihat Daftar <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <!-- Pengumuman 2 -->
-                    <article class="card card--berita">
-                        <div class="card__img-wrapper">
-                            <img src="https://placehold.co/400x250/e11d48/ffffff?text=Jadwal+USP" alt="Pengumuman Thumbnail">
-                            <span class="card__date">10 April 2026</span>
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title">Jadwal Ujian Satuan Pendidikan (USP) Tahun 2026</h3>
-                            <p class="card__excerpt">Informasi lengkap mengenai jadwal pelaksanaan Ujian Satuan Pendidikan bagi seluruh siswa kelas XII SMKN 1 Surabaya. Persiapkan diri Anda dengan baik!</p>
-                            <a href="#" class="card__link">Download Jadwal <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <!-- Pengumuman 3 -->
-                    <article class="card card--berita">
-                        <div class="card__img-wrapper">
-                            <img src="https://placehold.co/400x250/111827/ffffff?text=Libur+Lebaran" alt="Pengumuman Thumbnail">
-                            <span class="card__date">25 Maret 2026</span>
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title">Pengumuman Libur Hari Raya Idul Fitri 1447 H</h3>
-                            <p class="card__excerpt">Sehubungan dengan Hari Raya Idul Fitri, kegiatan belajar mengajar akan diliburkan sementara. Informasi tanggal libur dan masuk kembali dapat dilihat di sini.</p>
-                            <a href="#" class="card__link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <!-- Pengumuman 4 (Placeholder) -->
-                    <article class="card card--berita">
-                        <div class="card__img-wrapper">
-                            <img src="https://placehold.co/400x250/059669/ffffff?text=Lomba+Kompetensi" alt="Pengumuman Thumbnail">
-                            <span class="card__date">15 Maret 2026</span>
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title">Persiapan Lomba Kompetensi Siswa (LKS) Tingkat Kota</h3>
-                            <p class="card__excerpt">Pendaftaran seleksi internal untuk mewakili sekolah dalam ajang LKS Tingkat Kota Surabaya tahun 2026 telah dibuka. Tunjukkan bakat terbaikmu!</p>
-                            <a href="#" class="card__link">Daftar Sekarang <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
+                <div class="section-header">
+                    <h2 class="section-title">Lembaga <span class="text-accent">Sertifikasi Profesi (LSP)</span></h2>
+                    <p class="section-desc">LSP-P1 SMKN 1 Surabaya adalah lembaga pendukung BNSP yang bertanggung jawab melaksanakan sertifikasi kompetensi profesi bagi siswa.</p>
                 </div>
 
-                <!-- Pagination (Optional - Visual Only) -->
-                <div class="pagination" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 4rem;">
-                    <a href="#" class="btn btn--outline btn--sm active">1</a>
-                    <a href="#" class="btn btn--outline btn--sm">2</a>
-                    <a href="#" class="btn btn--outline btn--sm">3</a>
-                    <a href="#" class="btn btn--outline btn--sm"><i class="fas fa-chevron-right"></i></a>
+                <div class="jurusan__grid">
+                    <!-- Card 1 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-id-card"></i></div>
+                        <h3 class="card__title">Sertifikasi Kompetensi</h3>
+                        <p class="card__desc">Memberikan pengakuan resmi atas kompetensi yang dimiliki siswa sesuai dengan standar nasional (SKKNI).</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-user-check"></i></div>
+                        <h3 class="card__title">Asesor Profesional</h3>
+                        <p class="card__desc">Didukung oleh tenaga pendidik yang telah bersertifikat asesor kompetensi dari BNSP.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-file-signature"></i></div>
+                        <h3 class="card__title">Skema Sertifikasi</h3>
+                        <p class="card__desc">Tersedia berbagai skema sertifikasi yang disesuaikan dengan kurikulum setiap program keahlian.</p>
+                    </div>
+                </div>
+
+                <div class="profil__prakata" style="margin-top: 3rem; max-width: 100%;">
+                    <h3 class="prakata__title">Tujuan LSP</h3>
+                    <p class="prakata__text">Lembaga Sertifikasi Profesi (LSP) P1 SMK Negeri 1 Surabaya bertujuan untuk memastikan dan memelihara kompetensi para peserta didik sehingga memiliki daya saing yang tinggi di dunia kerja. Dengan sertifikat kompetensi BNSP, lulusan kami memiliki bukti formal yang diakui secara nasional maupun internasional mengenai keahlian yang mereka kuasai.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BKK SECTION ================= -->
+        <section id="bkk" class="section section-animate" style="background-color: #f8fafc;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Bursa <span class="text-accent">Kerja Khusus (BKK)</span></h2>
+                    <p class="section-desc">Unit pelayanan yang memberikan informasi lowongan kerja, pemasaran, penyaluran dan penempatan tenaga kerja.</p>
+                </div>
+
+                <div class="jurusan__grid">
+                    <!-- Service 1 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                        <h3 class="card__title">Informasi Lowongan</h3>
+                        <p class="card__desc">Menyediakan informasi terkini mengenai peluang karir dari berbagai perusahaan mitra industri.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-handshake"></i></div>
+                        <h3 class="card__title">Kerjasama Industri</h3>
+                        <p class="card__desc">Membangun jejaring dengan ratusan perusahaan untuk memfasilitasi rekrutmen lulusan.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="card card--jurusan">
+                        <div class="card__icon-wrapper"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="card__title">Pelatihan & Persiapan</h3>
+                        <p class="card__desc">Memberikan pembekalan berupa tips interview, pembuatan CV, dan etika dunia kerja.</p>
+                    </div>
+                </div>
+
+                <div class="profil__prakata" style="margin-top: 3rem; max-width: 100%;">
+                    <h3 class="prakata__title">Peran BKK</h3>
+                    <p class="prakata__text">BKK SMK Negeri 1 Surabaya berperan aktif sebagai jembatan antara dunia pendidikan dan dunia industri (DUDI). Kami secara rutin menyelenggarakan kegiatan rekrutmen langsung (job fair) dan seleksi karyawan di lingkungan sekolah untuk memudahkan lulusan mendapatkan pekerjaan yang relevan dengan bidang keahliannya.</p>
                 </div>
             </div>
         </section>
@@ -169,6 +177,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__grid">
+                <!-- Col 1 -->
                 <div class="footer__col">
                     <h3 class="footer__brand">SMKN 1 <span class="text-accent">Surabaya</span></h3>
                     <p class="footer__desc">Mencetak generasi unggul, terampil, dan berkarakter untuk masa depan industri global.</p>
@@ -178,6 +187,8 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                
+                <!-- Col 2 -->
                 <div class="footer__col">
                     <h4 class="footer__title">Kontak</h4>
                     <ul class="footer__contact">
@@ -186,6 +197,8 @@
                         <li><i class="fas fa-envelope"></i> info@smkn1-sby.sch.id</li>
                     </ul>
                 </div>
+
+                <!-- Col 3 -->
                 <div class="footer__col">
                     <h4 class="footer__title">Tautan</h4>
                     <ul class="footer__links">
@@ -195,11 +208,14 @@
                         <li><a href="#">Sistem Informasi Akademik</a></li>
                     </ul>
                 </div>
+
+                <!-- Col 4 -->
                 <div class="footer__col footer__maps">
                     <h4 class="footer__title">Lokasi</h4>
                     <img src="https://placehold.co/300x200/efefef/333?text=Google+Maps" alt="Peta Lokasi" class="footer__map-img">
                 </div>
             </div>
+            
             <div class="footer__bottom">
                 <p>&copy; 2026 SMKN 1 Surabaya. All rights reserved.</p>
                 <div class="footer__policy">
