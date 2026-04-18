@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teknik Komputer dan Jaringan - SMKN 1 Surabaya</title>
-    <meta name="description" content="Program Keahlian Teknik Komputer dan Jaringan di SMKN 1 Surabaya - Mempelajari infrastruktur jaringan, administrasi server, dan keamanan IT.">
+    <title>Berita - SMKN 1 Surabaya</title>
+    <meta name="description" content="Informasi dan liputan kegiatan terkini dari lingkungan SMKN 1 Surabaya.">
     
+    <!-- Fonts: Bricolage Grotesque & Instrument Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -42,7 +47,7 @@
                     </li>
 
                     <li class="nav__item has-dropdown">
-                        <a href="index.html#jurusan" class="nav__link active">Jurusan <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <a href="index.html#jurusan" class="nav__link">Jurusan <i class="fas fa-chevron-down dropdown__icon"></i></a>
                         <ul class="dropdown__menu">
                             <li><a href="akuntansi.html" class="dropdown__link">Akuntansi</a></li>
                             <li><a href="bisnis-daring.html" class="dropdown__link">Bisnis Daring dan Pemasaran</a></li>
@@ -64,7 +69,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav__item"><a href="berita.html" class="nav__link">Berita</a></li>
+                    <li class="nav__item"><a href="berita.html" class="nav__link active">Berita</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Modul</a></li>
                     
                     <li class="nav__item has-dropdown">
@@ -87,60 +92,103 @@
                     <div class="page-hero__breadcrumb">
                         <a href="index.html">Home</a>
                         <span>/</span>
-                        <span>Jurusan</span>
-                        <span>/</span>
-                        <span>Teknik Komputer dan Jaringan</span>
+                        <span>Berita</span>
                     </div>
-                    <h1 class="page-hero__title">Teknik Komputer dan Jaringan (TKJ)</h1>
-                    <p class="page-hero__desc">Membangun pondasi teknologi informasi yang kokoh melalui penguasaan infrastruktur jaringan dan sistem administrator.</p>
+                    <h1 class="page-hero__title">Berita Sekolah</h1>
+                    <p class="page-hero__desc">Informasi dan liputan kegiatan terkini dari lingkungan SMKN 1 Surabaya.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ================= CONTENT ================= -->
-        <section class="jurusan-detail section-animate">
+        <!-- ================= NEWS GRID ================= -->
+        <section class="berita-page section-animate">
             <div class="container">
-                <div class="jurusan-grid">
-                    <!-- Deskripsi -->
-                    <div class="visi-card">
-                        <span class="visi-card__label"><i class="fas fa-info-circle"></i> Deskripsi Jurusan</span>
-                        <p class="visi-card__text">Jurusan Teknik Komputer dan Jaringan (TKJ) di SMKN 1 Surabaya mencetak tenaga ahli di bidang teknologi informasi yang kompeten dalam perakitan hardware, instalasi sistem operasi, konfigurasi perangkat jaringan (Router, Switch), administrasi server, hingga keamanan jaringan tingkat menengah.</p>
-                    </div>
-
-                    <!-- Kompetensi -->
-                    <div class="visi-card">
-                        <span class="visi-card__label"><i class="fas fa-graduation-cap"></i> Kompetensi Keahlian</span>
-                        <ul class="misi-list" style="margin-top: 1rem;">
-                            <li>Instalasi WAN/LAN & Perangkat Jaringan (Mikrotik/Cisco)</li>
-                            <li>Administrasi Sistem Jaringan (Linux/Windows Server)</li>
-                            <li>Teknologi Layanan Jaringan & Komunikasi Data</li>
-                            <li>Perakitan & Perbaikan Komputer/Laptop</li>
-                            <li>Network Security & Troubleshooting</li>
-                        </ul>
-                    </div>
-
-                    <!-- Prospek Kerja -->
-                    <div class="visi-card">
-                        <span class="visi-card__label"><i class="fas fa-briefcase"></i> Prospek Karir</span>
-                        <div class="values-grid" style="margin-top: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
-                            <div class="value-card" style="padding: 1rem;">
-                                <div class="value-card__icon" style="font-size: 1.5rem;"><i class="fas fa-network-wired"></i></div>
-                                <h3 class="value-card__title" style="font-size: 1rem;">Network Admin</h3>
-                            </div>
-                            <div class="value-card" style="padding: 1rem;">
-                                <div class="value-card__icon" style="font-size: 1.5rem;"><i class="fas fa-tools"></i></div>
-                                <h3 class="value-card__title" style="font-size: 1rem;">Technical Support</h3>
-                            </div>
-                            <div class="value-card" style="padding: 1rem;">
-                                <div class="value-card__icon" style="font-size: 1.5rem;"><i class="fas fa-server"></i></div>
-                                <h3 class="value-card__title" style="font-size: 1rem;">System Admin</h3>
-                            </div>
-                            <div class="value-card" style="padding: 1rem;">
-                                <div class="value-card__icon" style="font-size: 1.5rem;"><i class="fas fa-satellite-dish"></i></div>
-                                <h3 class="value-card__title" style="font-size: 1rem;">ISP Engineer</h3>
-                            </div>
+                <div class="berita__list">
+                    <!-- Berita 1 -->
+                    <article class="card card--berita-list">
+                        <div class="card__img-wrapper">
+                            <img src="https://www.smkn1-sby.sch.id/storage/images/blog/fGifQrE3vzP0haUX35eLSZoEkz8wb1.jpg" alt="SNBP 2026">
+                            <span class="card__date">04 April 2026</span>
                         </div>
-                    </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Jalur SNBP 2026 Sebanyak 83 Siswa SMKN 1 Surabaya Tembus PTN Ternama</h3>
+                            <p class="card__excerpt">www.smkn1-sby.sch.id. Surabaya - Sebanyak 83 siswa SMKN 1 Surabaya dinyatakan lolos ke Perguruan Tinggi Negeri ternama...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Berita 2 -->
+                    <article class="card card--berita-list">
+                        <div class="card__img-wrapper">
+                            <img src="https://www.smkn1-sby.sch.id/storage/images/blog/XkZnYCyafBi3oS7zlfk3fWuJyRKkNC.jpg" alt="Juara Umum LKS">
+                            <span class="card__date">12 Februari 2026</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">SMKN 1 Surabaya Juara Umum LKS Tingkat Kota 2026</h3>
+                            <p class="card__excerpt">Kontingen SMK Negeri 1 Kota Surabaya kembali menorehkan prestasi gemilang dengan menjadi juara umum LKS Tingkat Kota...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Berita 3 -->
+                    <article class="card card--berita-list">
+                        <div class="card__img-wrapper">
+                            <img src="https://www.smkn1-sby.sch.id/storage/images/blog/qnQGjEP7FxO53MbTJ1fpOZagGwzuo4.jpg" alt="LDKS 2025">
+                            <span class="card__date">14 November 2025</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">LDKS, Kunci Keberhasilan Adalah Kedisiplinan dan Kerja Keras</h3>
+                            <p class="card__excerpt">Surabaya - Siswa-siswi SMKN 1 Surabaya melaksanakan Latihan Dasar Kepemimpinan Siswa (LDKS) sebagai upaya penguatan karakter...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Berita 4 -->
+                    <article class="card card--berita-list">
+                        <div class="card__img-wrapper">
+                            <img src="https://www.smkn1-sby.sch.id/storage/images/blog/yu4BVUVSJ5A8gHZUh9vqxc0ervwiT8.jpg" alt="Hari Pahlawan">
+                            <span class="card__date">10 November 2025</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Hari Pahlawan, Tampilkan Pertunjukan Drama Klosal</h3>
+                            <p class="card__excerpt">Upacara Hari Pahlawan di SMKN 1 Surabaya diwarnai dengan pertunjukan drama klosal yang membangkitkan semangat nasionalisme...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Berita 5 -->
+                    <article class="card card--berita-list">
+                        <div class="card__img-wrapper">
+                            <img src="https://www.smkn1-sby.sch.id/storage/images/blog/oNtHmAk8f3fCj2QeJ7w8XPJfIkzpdh.jpg" alt="Dies Natalis">
+                            <span class="card__date">18 Oktober 2025</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Dies Natalis Momen Bersejarah Perkuat Persaudaraan di SMKN 1 Surabaya</h3>
+                            <p class="card__excerpt">Perayaan Dies Natalis SMKN 1 Surabaya menjadi ajang untuk mempererat tali silaturahmi antar warga sekolah dan Alumni...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Berita 6 -->
+                    <article class="card card--berita-list">
+                        <div class="card__img-wrapper">
+                            <img src="https://www.smkn1-sby.sch.id/storage/images/blog/4jz7gQmzvwihCFkSdskfgENLZxx413.jpg" alt="Karnaval HUT">
+                            <span class="card__date">18 Oktober 2025</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Karnaval Hiasi Jalan Sehat HUT SMKN 1 Surabaya</h3>
+                            <p class="card__excerpt">Pagi hari yang istimewa dengan karnaval budaya dan jalan sehat dalam rangka memperingati Hari Ulang Tahun sekolah...</p>
+                            <a href="#" class="card__link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 4rem;">
+                    <a href="#" class="btn btn--outline btn--sm active">1</a>
+                    <a href="#" class="btn btn--outline btn--sm">2</a>
+                    <a href="#" class="btn btn--outline btn--sm">3</a>
+                    <a href="#" class="btn btn--outline btn--sm"><i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </section>
@@ -183,6 +231,10 @@
             </div>
             <div class="footer__bottom">
                 <p>&copy; 2026 SMKN 1 Surabaya. All rights reserved.</p>
+                <div class="footer__policy">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
